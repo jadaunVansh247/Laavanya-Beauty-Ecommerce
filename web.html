@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendStore | Modern Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
+    
+
+</head>
+<body class="body">
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Laavany<span>Beauty</span></div>
+            <ul class="nav-links">
+                <li><a href="WEB.HTML">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://forms.gle/DJXTQSCCxSVsFL6j6">Feedback/Help</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class='bx bx-search'></i>
+                <i class='bx bx-user'></i>
+                <div class="cart-icon" id="cart-icon">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Skin</h1>
+            <p>Discover the Natural & Organic in minimalist Beauty and Skin Care.</p>
+            <a href="#products" class="btn">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products" id="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- CART DRAWER (Sidebar) -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class='bx bx-x close-cart' id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button
+            class="checkout-btn"
+            onclick="startPayment()">
+
+            Checkout Now
+
+            </button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+   <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand & About -->
+            <div class="footer-col">
+                <div class="logo">Laavany<span>Beauty</span></div>
+                <p class="footer-desc">
+                    Your premium destination for modern minimalist fashion and lifestyle essentials. Quality-first, always.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="SHIPPING.HTML">Shipping Policy</a></li>
+                    <li><a href="RETURNS.HTML">Returns & Exchanges</a></li>
+                    <li><a href="TRACKING.HTML">Order Tracking</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col">
+                <h4>Stay in the Loop</h4>
+                <p>Subscribe to get special offers and first look at new drops.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="newsletter-btn">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-content">
+                <p>&copy; 2026 LaavanyBeauty. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class='bx bxl-visa'></i>
+                    <i class='bx bxl-mastercard'></i>
+                    <i class='bx bxl-paypal'></i>
+                    <i class='bx bxl-apple'></i>
+                </div>
+                <ul class="legal-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
